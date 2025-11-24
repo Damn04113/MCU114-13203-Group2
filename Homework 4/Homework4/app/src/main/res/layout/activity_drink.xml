@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    tools:context=".DrinkActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請選擇飲料"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDrink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbTea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="紅茶" />
+
+        <RadioButton
+            android:id="@+id/rbCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="咖啡" />
+
+        <RadioButton
+            android:id="@+id/rbJuice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="果汁" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNextDrink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步（確認訂單）"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
